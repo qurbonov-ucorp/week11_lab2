@@ -8,7 +8,12 @@ int main() {
     for(int i=0;i<n;i++) {
         cin>>v[i];
     }
-    for(int i=n-1;i>=0;i--) {
+    for(int i=0;i<n;i++) {
+        if(v[i]%2==1) {
+            v[i]=2*v[i];
+        }else {
+            v[i]=v[i]/2;
+        }
         cout<<v[i]<<" ";
     }
-}3
+}
